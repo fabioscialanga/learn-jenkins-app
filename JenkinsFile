@@ -6,7 +6,7 @@ pipeline {
         NETLIFY_AUTH_TOKEN = credentials('netfily-token')
     }
 
-  stages {
+    stages {
 
         stage('Build') {
             agent {
@@ -103,7 +103,7 @@ pipeline {
             }
 
             environment {
-                CI_ENVIRONMENT_URL = 'PUT YOUR NETLIFY SITE URL HERE'
+                CI_ENVIRONMENT_URL = 'stately-profiterole-5e17fb.netlify.app'
             }
 
             steps {
